@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="web developer, portofolio, jasa website, desain web, Indonesia" />
+  <title>MHAMD RZKY</title>
+
+
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  
+  </head>
+
+<body style="background-color: var(--bs-body);">
+
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar style="background-color: var(--bs-body);">
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/me1.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Muhammad Rizky</h1>
+
+          <p class="title">Beginner Web developer</p>
+
+      
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:rizkymr1998515@gmail.com" class="contact-link">rizkymr1998515@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+6285695599901" class="contact-link">0856-9559-9901</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Github</p>
+
+              <a href="https://github.com/mhmaddrzky" class="contact-link">Mhamd Rzky</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Kab Bandung, Jawa Barat</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/share/16Pt8AKwFU/?mibextid=wwXIfr" class="social-link">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.tiktok.com/@bse.devvvv?_t=ZS-8wBM9KePJgN&_r=1" class="social-link">
+                <a href="http://www.w3.org/2000/svg" class="social-link">
+                  <i class="bi bi-tiktok"></i>
+                </a>
+              </li>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/bse.dev?igsh=NXh2d256eXV6dGd2&utm_source=qr" class="social-link">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </li>
+
+        </ul>
+
+       
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content" >
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Skills</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+          <li class="navbar-item">
+            <button id="themeToggleBtn" class="navbar-link" type="button">
+              <i id="themeToggleIcon" class="bi bi-moon-stars-fill me-1"></i>
+            </button>
+          </li>
+          
+          
+
+
+          
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about" style="background-color: var(--bs-body);">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Saya seorang pengembang web dari Bandung, Jawa Barat. Saya memiliki pengalaman 1 tahun dalam pengembangan web front-end. Saya sangat menikmati apa yang saya lakukan saat ini, menurut saya membuat program bukan sekedar pekerjaan, tapi juga sebuah seni yang mempunyai nilai estetika.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service" >
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item" >
+
+              <div class="service-icon-box" >
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box" >
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  Membangun website yang sesuai standar dan kebutuhan pengguna.
+                </p>
+              </div>
+
+            </li>
+            <li class="service-item" >
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">UI/UX Desain</h4>
+
+                <p class="service-item-text">
+                  Desain UI/UX yang fokus pada pengalaman dan kenyamanan pengguna.
+                </p>
+              </div>
+
+            </li>
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">LARAVEL</h4>
+
+                <p class="service-item-text">
+                  Mengembangkan backend website yang efisien dan sesuai kebutuhan pengguna menggunakan Laravel.
+                </p>
+              </div>
+
+            </li>
+
+        
+
+          </ul>
+
+        </section>
+        <div class="modal-container" data-modal-container >
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </section>
+
+        </div>
+
+       </article>
+
+
+
+
+<!--   
+        - #RESUME
+      --> 
+
+      <article class="skills" data-page="skills" style="background-color: var(--bs-body);">
+
+        <header>
+          <h2 class="h2 article-title"></h2>
+        </header>
+
+   
+
+        <section class="timeline" >
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Beginner Web Developer & UI/UX Designer</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">HTML</h4>
+
+              <span> ——— </span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">CSS</h4>
+
+              <span> —— </span>
+
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">JAVA SCRIPT</h4>
+
+              <span>——————</span>
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">LARAVEL</h4>
+
+              <span>————</span>
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">FIGMA</h4>
+
+              <span>———</span>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="Skills">
+
+          <h3 class="h3 skills-title">Persentase skills</h3>
+
+          <ul class="skills-list content-card" >
+
+            <li class="skills-item" >
+
+              <div class="title-wrapper">
+                <h5 class="h5">HTML 80%</h5>
+              
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">CSS 70%</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">JAVA SCRIPT 50%</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">LARAVEL 40%</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 40%;"></div>
+              </div>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">FIGMA 30%</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 30%;"></div>
+              </div>
+
+            </li>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio" style="background-color: var(--bs-body);">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button data-filter-btn>Web development & UI/UX</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button>Web development</button>
+                <button>UI/UX design</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+              
+
+                  <img src="./assets/images/design.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"> Teknologi Laravel CRUD Daftar Film</h3>
+
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <img src="./assets/images/wedding.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Undangan Digital Berbasis Web</h3>
+
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+               
+
+                  <img src="./assets/images/figma.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">UI/UX Figma Travelo</h3>
+
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+              
+
+                  <img src="./assets/images/iot.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Internet Of Things ESP 32</h3>
+
+
+              </a>
+            </li>
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #BLOG
+      -->
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact" style="background-color: var(--bs-body);">
+
+        <header>
+          <h2 class="h2 article-title">Contact Me</h2>
+        </header>
+
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Hubungi saya untuk diskusi lebih lanjut</h3>
+
+          <form id="wa-form" class="form" action="https://formspree.io/f/xyzwdewa" method="POST">
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
+              <input type="email" name="email" class="form-input" placeholder="Your Email Address" required>
+            </div>
+          
+            <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+          
+            <button type="submit" class="form-btn">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          
+          </form>
+          
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const themeToggleIcon = document.getElementById('themeToggleIcon');
+  
+    // Load saved theme from localStorage
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    setTheme(currentTheme);
+  
+    themeToggleBtn.addEventListener('click', () => {
+      const newTheme = document.documentElement.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
+      setTheme(newTheme);
+    });
+  
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-bs-theme', theme);
+      localStorage.setItem('theme', theme);
+      
+      // Update icon
+      themeToggleIcon.className = theme === 'dark'
+        ? 'bi bi-brightness-high-fill me-1'
+        : 'bi bi-moon-stars-fill me-1';
+    }
+  </script>
+  
+  
+</body>
+
+</html>
