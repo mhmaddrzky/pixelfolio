@@ -482,20 +482,31 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+            <li class="project-item active" data-filter-item data-category="web design">
+  <a href="#" class="open-modal" data-project="crud-film">
 
-                <figure class="project-img">
-              
+    <figure class="project-img">
+      <img src="./assets/images/design.png" alt="CRUD Daftar Film" loading="lazy">
+    </figure>
 
-                  <img src="./assets/images/design.png" alt="metaspark" loading="lazy">
-                </figure>
+    <h3 class="project-title">Teknologi Laravel CRUD Daftar Film</h3>
+  </a>
+</li>
 
-                <h3 class="project-title"> Teknologi Laravel CRUD Daftar Film</h3>
+<!-- Modal -->
+<div id="crud-film" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>CRUD Daftar Film</h2>
+    <p>
+      Proyek ini adalah aplikasi sederhana untuk mengelola daftar film dengan fitur
+      <b>Create, Read, Update, dan Delete (CRUD)</b>. Dibangun menggunakan
+      <b>Laravel, MySQL, HTML, CSS, dan JavaScript</b>.
+    </p>
+    <a href="https://github.com/mhmaddrzky" target="_blank" class="btn">Lihat Repo</a>
+  </div>
+</div>
 
-
-              </a>
-            </li>
             <li class="project-item  active" data-filter-item data-category="web design">
               <a href="#">
 
@@ -642,6 +653,30 @@
         ? 'bi bi-brightness-high-fill me-1'
         : 'bi bi-moon-stars-fill me-1';
     }
+
+    // Ambil semua tombol open modal
+document.querySelectorAll(".open-modal").forEach(item => {
+  item.addEventListener("click", function(e) {
+    e.preventDefault();
+    const projectId = this.getAttribute("data-project");
+    document.getElementById(projectId).style.display = "block";
+  });
+});
+
+// Tutup modal saat klik X
+document.querySelectorAll(".close").forEach(btn => {
+  btn.addEventListener("click", function() {
+    this.closest(".modal").style.display = "none";
+  });
+});
+
+// Tutup modal jika klik di luar konten
+window.addEventListener("click", function(e) {
+  document.querySelectorAll(".modal").forEach(modal => {
+    if (e.target === modal) modal.style.display = "none";
+  });
+});
+
   </script>
   
   
