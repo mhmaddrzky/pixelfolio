@@ -1066,51 +1066,37 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
-
-/* Modal background */
+/* modal baru */
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1000; 
-  padding-top: 80px; 
-  left: 0; top: 0; 
-  width: 100%; height: 100%; 
-  overflow: auto; 
-  background-color: rgba(0,0,0,0.7);
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
 }
 
-/* Modal content box */
 .modal-content {
-  background: #fff;
-  margin: auto;
+  background: var(--container-color, #fff);
+  margin: 10% auto;
   padding: 20px;
   border-radius: 12px;
   width: 80%;
-  max-width: 500px;
-  text-align: center;
+  max-width: 600px;
+  color: var(--text-color, #000);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
-/* Close button */
 .close {
-  color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
 }
-.close:hover { color: #000; }
 
-/* Tombol */
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: #4CAF50;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-}
-.btn:hover { background: #45a049; }
 
 
 
