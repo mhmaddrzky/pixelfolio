@@ -504,49 +504,32 @@ SECTION UNDANGAN -->
   </li>
 
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+  <li class="project-item active" data-filter-item data-category="web design">
+  <a href="#" class="open-modal" data-project="figma-travelo">
+    <figure class="project-img">
+      <img src="./assets/images/figma.png" alt="UI/UX Figma" loading="lazy">
+    </figure>
+    <h3 class="project-title">UI/UX Figma Travelo</h3>
+  </a>
+</li>
 
-                <figure class="project-img">
-               
+<li class="project-item active" data-filter-item data-category="web design">
+  <a href="#" class="open-modal" data-project="iot-esp32">
+    <figure class="project-img">
+      <img src="./assets/images/iot.png" alt="IoT ESP32" loading="lazy">
+    </figure>
+    <h3 class="project-title">Internet Of Things ESP 32</h3>
+  </a>
+</li>
 
-                  <img src="./assets/images/figma.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title" style = "text-align: center;"> UI/UX Figma Travelo</h3>
-
-
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-              
-
-                  <img src="./assets/images/iot.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title" style = "text-align: center;"> Internet Of Things ESP 32</h3>
-
-
-              </a>
-            </li>
-
-                <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-              
-
-                  <img src="./assets/images/BCE.png" alt="BCE" loading="lazy">
-                </figure>
-
-                <h3 class="project-title" style = "text-align: center;"> BANDUNG COMPUTER EDUCATION 🌏</h3>
-
-
-              </a>
-            </li>
+<li class="project-item active" data-filter-item data-category="web design">
+  <a href="#" class="open-modal" data-project="bce">
+    <figure class="project-img">
+      <img src="./assets/images/BCE.png" alt="BCE" loading="lazy">
+    </figure>
+    <h3 class="project-title">Bandung Computer Education 🌏</h3>
+  </a>
+</li>
 
 
           </ul>
@@ -554,17 +537,19 @@ SECTION UNDANGAN -->
         </section>
         
       </article>
-      <!--   modal untuk laravel -->
-  <div id="crud-film" class="modal">
+ <!-- Modal untuk Laravel CRUD -->
+<div id="crud-film" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <h2>CRUD Daftar Film</h2>
+    <h2>Teknologi Laravel CRUD Daftar Film</h2>
     <p>
-      Proyek ini adalah aplikasi CRUD untuk mengelola daftar film, dibangun dengan Laravel, MySQL, HTML, CSS, dan JavaScript.
+      Proyek ini adalah aplikasi CRUD untuk mengelola daftar film,
+      dibangun dengan Laravel, MySQL, HTML, CSS, dan JavaScript.
     </p>
   </div>
 </div>
-<!--         modal untuk undangan -->
+
+<!-- Modal untuk Web Undangan -->
 <div id="web-undangan" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
@@ -576,6 +561,43 @@ SECTION UNDANGAN -->
     </p>
   </div>
 </div>
+
+<!-- Modal untuk UI/UX Figma -->
+<div id="figma-travelo" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>UI/UX Figma Travelo</h2>
+    <p>
+      Proyek desain UI/UX aplikasi travel yang dibuat di Figma dengan fokus pada
+      pengalaman pengguna yang modern dan interaktif.
+    </p>
+  </div>
+</div>
+
+<!-- Modal untuk IoT -->
+<div id="iot-esp32" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Internet Of Things ESP 32</h2>
+    <p>
+      Proyek IoT berbasis ESP32 untuk menghubungkan perangkat pintar dengan
+      sensor dan kontrol jarak jauh melalui internet.
+    </p>
+  </div>
+</div>
+
+<!-- Modal untuk BCE -->
+<div id="bce" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Bandung Computer Education 🌏</h2>
+    <p>
+      Proyek ini merupakan platform edukasi komputer untuk pelajar dan umum,
+      dengan materi digital dan praktik langsung.
+    </p>
+  </div>
+</div>
+
       <!--
         - #CONTACT
       -->
@@ -655,8 +677,6 @@ SECTION UNDANGAN -->
         ? 'bi bi-brightness-high-fill me-1'
         : 'bi bi-moon-stars-fill me-1';
     }
-
-    // Ambil semua tombol open modal
 document.querySelectorAll(".open-modal").forEach(item => {
   item.addEventListener("click", function(e) {
     e.preventDefault();
@@ -665,19 +685,18 @@ document.querySelectorAll(".open-modal").forEach(item => {
   });
 });
 
-// Tutup modal saat klik X
 document.querySelectorAll(".close").forEach(btn => {
   btn.addEventListener("click", function() {
     this.closest(".modal").style.display = "none";
   });
 });
 
-// Tutup modal jika klik di luar konten
 window.addEventListener("click", function(e) {
   document.querySelectorAll(".modal").forEach(modal => {
     if (e.target === modal) modal.style.display = "none";
   });
 });
+
 
   </script>
   
